@@ -60,6 +60,8 @@ Do the following:
 
    HINT: look up the Number method
 */
+Number("1999");
+console.log(Number);
 
 
 
