@@ -39,15 +39,13 @@ Do the following:
 
    HINT: no function required
 */
-var thing1 = 0;
-var thing2 = 1;
+let name= 'Colton';
+let favThing= 'books'
 
-if (thing1 === thing2){
-  console.log('True');
-} else{
-  console.log('false');
+if( favThing === 'books'){
+  name = 'Mommy'
 }
-
+console.log(name);
 
 
 /*
@@ -60,8 +58,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-Number("1999");
-console.log(Number);
+let number = '1999';
+console.log(Number(number));
 
 
 
@@ -146,22 +144,22 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 
 function hungryDog(dogAge, dogWeight){
   if (dogAge >= 1 && dogWeight === 5){
-    console.log( dogWeight / .05);
+    return( dogWeight * .05);
   } else if(dogAge >= 5 && dogWeight > 5 < 10){
-    console.log( dogWeight / .04);
+    return( dogWeight * .04);
   } else if(dogAge >= 5 && dogWeight > 10 < 15){
-    console.log( dogWeight / .03);
+    return( dogWeight * .03);
   } else if(dogAge >= 5 && dogWeight > 15){
-    console.log( dogWeight / .02);
+    return( dogWeight * .02);
   } else if( dogAge <= .4){
-    console.log(dogWeight / .1);
+    return(dogWeight * .1);
   } else if( dogAge > .4 < .7){
-    console.log(dogWeight / .05);
+    return(dogWeight * .05);
   } else if( dogAge > .7 < 1){
-    console.log(dogWeight / .04);
+    return(dogWeight * .04);
   }
 
-  console.log(2,10);
+  console.log(hungryDog(4 , 1));
 
 }
 
