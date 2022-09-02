@@ -143,25 +143,24 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 */  
 
 function hungryDog(dogAge, dogWeight){
-  if (dogAge >= 1 && dogWeight === 5){
-    return( dogWeight * .05);
-  } else if(dogAge >= 5 && dogWeight > 5 < 10){
-    return( dogWeight * .04);
-  } else if(dogAge >= 5 && dogWeight > 10 < 15){
-    return( dogWeight * .03);
-  } else if(dogAge >= 5 && dogWeight > 15){
-    return( dogWeight * .02);
-  } else if( dogAge <= .4){
-    return(dogWeight * .1);
-  } else if( dogAge > .4 < .7){
-    return(dogWeight * .05);
-  } else if( dogAge > .7 < 1){
-    return(dogWeight * .04);
+  if (dogAge >= 1 && dogWeight <= 5){
+    return dogWeight * 0.05;
+  } else if(dogAge >= 1 && dogWeight >= 5 && dogWeight <= 10){
+    return dogWeight * 0.04;
+  } else if(dogAge >= 1 && dogWeight >= 11 && dogWeight <= 15){
+    return dogWeight * 0.03;
+  } else if(dogAge >= 1 && dogWeight >= 16){
+    return dogWeight * 0.02;
+  } else if(dogAge <= .4){
+    return dogWeight * 0.1;
+  } else if(dogAge >= .4 && dogAge <= .7){
+    return dogWeight * 0.05;
+  } else if(dogAge >= .7 && dogAge <= 1){
+    return dogWeight * 0.04;
   }
-
-  console.log(hungryDog(4 , 1));
-
 }
+
+  console.log(hungryDog(1 , 4));
 
 
 
