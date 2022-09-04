@@ -236,7 +236,7 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
-  return cm * 30.48
+  return cm / 30.48
 }
 console.log(feet(3));
 
@@ -256,10 +256,12 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
-}
 
+function annoyingSong(bottles){
+  for( let i = bottles; i > 0; i --)
+    return `${bottles} bottles of soda on the wall, ${bottles} bottles of soda, take one down pass it around ${bottles - 1} bottles of soda on the wall`
+}
+console.log(annoyingSong(100));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
