@@ -74,9 +74,9 @@ Do the following:
 */
 
 function multiply(a,b){
-  console.log(a * b);
+  return a*b;
 }
-multiply(3,3);
+console.log(multiply(5,7));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -90,9 +90,9 @@ Do the following:
 */
 
 function dogYears(humanYears){
-  console.log(humanYears * 7);
+  return humanYears * 7;
 }
-dogYears(4);
+console.log(dogYears(5));
 
 
 
@@ -197,13 +197,13 @@ let computer = Math.random;
 
 function game(user, computer){
    if(user === computer){
-      return `It's a Tie!`;
+      return `it's a tie`;
    } else if(user === `rock` && computer === `scissors`){
-      return `you Win!`;
+      return `you win!`;
    } else if(user === `paper` && computer === `rock`){
-      return `you Win!`;
+      return `you win!`;
    } else if(user === `scissors` && computer === `paper`){
-      return `you Win!`;
+      return `you win!`;
    } else{
       return `you lose!`;
    }
@@ -307,11 +307,11 @@ HINT - you may need to study tomorrow's content on arrays
 HINT - try looking up the .includes() method
 */
 
-
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+let string = `We're in the end game now.`
+function vowelCounter(string) {
+  string.includes((a,e,i,o,u), 0);
 }
-
+console.log(vowelCounter);
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
